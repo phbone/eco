@@ -4,4 +4,4 @@ cd eco
 virtualenv venv
 . venv/bin/activate
 pip install Flask
-python hello.py
+python ec2.py

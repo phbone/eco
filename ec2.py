@@ -36,6 +36,7 @@ def launch_ec2():
 def terminate_ec2(instance_id):
     conn = boto.ec2.connect_to_region("us-east-1", aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
     conn.terminate_instances(instance_ids=[instance_id])
+    print "Shutting Down"
 
 
 @app.route('/compute/<int:input>',  methods=['GET'])
